@@ -239,8 +239,7 @@ body {
     }
     
     #cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p, #professional-site p{
-        margin-top: 10px;
-        padding: 10px;
+        padding: 5px;
         color: white;
         font-size: large;
     }
