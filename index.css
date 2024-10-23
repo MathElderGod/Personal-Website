@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 @font-face {
     font-family: "Merriweather";
@@ -12,22 +12,14 @@
     font-family: "Lato";
     src: url("/fonts/S6uyw4BMUTPHvxk6XweuBCY.ttf") format("truetype");
 }
-@keyframes enlarge {
-    from   {
-        max-width: 65%; 
-        max-height: 65%;
-    }
-    to   {
-        max-width: 75%; 
-        max-height: 75%;
-    }
-}
+
 :root {
     --light-ash-gray: #333;
     --muddy-black: #111; 
     --light-gray: #bbb;
     --main-img-blue: #436AAF;
     --neonblue: #2196F3;
+    --darker-neonblue: #005bb6;
 }
 .nav-bar ul {
     position: fixed;
@@ -52,6 +44,7 @@
     font-size: larger;
     text-decoration: none;
     padding: 14px 26px;
+    transition: background-color 0.5s ease;
 }
 
 .nav-bar ul li a:hover {
@@ -115,13 +108,11 @@ hr {
 }
 
 #contact-me ul li a img {
-    max-width: 65%;
-    max-height: 65%;
-    border-radius: 50%;
+    transition: opacity 0.3s ease; /* Smooth transition */
 }
 
 #contact-me ul li a img:hover {
-    animation: enlarge 1s forwards;
+    opacity: 0.5;
 }
 
 #about-me p {
@@ -131,23 +122,53 @@ hr {
 
 #education h3 {
     padding: 15px;
+    margin: 0;
 }
 
 #education p {
     padding-left: 25px;
     font-size: large;
+    margin: 5px 0; /* Reduce default spacing */
 }
 
 #ucsd-container, #ivc-container {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px 0px 20px 0px;
 }
-#ucsd-container img, #ivc-container img {
-    max-width: 5%;
-    max-height: 5%;
-    padding: 5px;
+#ucsd-container a, #ivc-container a {
+    max-width: 7.5%;
+    height: auto;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+#ucsd-container a img, #ivc-container a img {
+    max-width: 100%;
+    height: auto;
+    padding: 2px;
+    border-radius: 100%;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#ucsd-container a img:hover, #ivc-container a img:hover {
+    opacity: 0.5;
+}
+
+
+#skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Initially allow for auto-fill */
+    gap: 15px; /* Space between skill categories */
+}
+
+/* Limit to a maximum of 5 columns */
+@media (min-width: 1250px) {
+    #skills-container {
+        grid-template-columns: repeat(5, minmax(250px, 1fr)); /* Exactly 5 columns */
+    }
 }
 
 #skills-container details {
@@ -161,6 +182,11 @@ hr {
     color: white;
     padding: 10px;
     border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+#skills-container details summary:hover {
+    background-color: var(--darker-neonblue);
 }
 
 #skills-container details ul {
@@ -172,32 +198,48 @@ hr {
 }
 
 #projects-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Initially allow for auto-fill */
+    gap: 50px; /* Space between skill categories */
+    margin: 15px;
 }
 
-#projects-container  h3{
-    padding: 15px;
+/* Limit to a maximum of 5 columns */
+@media (min-width: 1250px) {
+    #projects-container {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Exactly 5 columns */
+    }
 }
 
-#cpu-isa, #nachos-os, #multi-platform-post-scheduler, #graphics-shadow-mapping {
-    display: flex;
-    flex-direction: column;
+#projects-container div h3{
+    padding: 15px;
+    color: var(--neonblue);
+}
+
+#cpu-isa, #nachos-os, #multi-platform-post-scheduler, #graphics-shadow-mapping, #professional-site {
     background-color: var(--light-ash-gray);
     border: 2.5px solid var(--muddy-black);
     border-radius: 5px;
+    margin: 10px;
+    padding: 2px;
+    width: 100%;
+    height: auto;
 }
 
-#cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p {
+#cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p, #professional-site p{
     padding: 10px;
     color: white;
     font-size: large;
 }
 #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img {
-    max-width: 10%;
-    max-height: 10%;
+    max-width: 25%;
+    max-height: 25%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover {
+    opacity: .75;
 }
 
 footer {
