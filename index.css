@@ -175,7 +175,7 @@ body {
     /* Limit to a maximum of 5 columns */
     #skills-container {
         display: grid;
-        grid-template-columns: repeat(5, minmax(250px, 1fr)); /* Exactly 5 columns */
+        grid-template-columns: repeat(4, minmax(250px, 1fr)); /* Exactly 4 columns */
         gap: 15px; 
     }
     
