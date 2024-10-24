@@ -305,18 +305,18 @@ hr {
     }
     #hamburger-menu {
         display: block;
-        width: 30px;
-        height: 4px;
+        width: 50px;
+        height: 5px;
         background-color: white;
-        margin: 15px 0px 15px 5px;
+        margin: 20px;
         transition: transform 0.5s;
     }
 
     #hamburger-menu:before, #hamburger-menu:after {
         content: '';
         display: block;
-        width: 30px;
-        height: 4px;
+        width: 50px;
+        height: 5px;
         background-color: white;
         position: absolute;
     }
@@ -569,18 +569,18 @@ hr {
     }
     #hamburger-menu {
         display: block;
-        width: 30px;
-        height: 4px;
+        width: 50px;
+        height: 5px;
         background-color: white;
-        margin: 15px 0px 15px 5px;
+        margin: 20px;
         transition: transform 0.5s;
     }
 
     #hamburger-menu:before, #hamburger-menu:after {
         content: '';
         display: block;
-        width: 30px;
-        height: 4px;
+        width: 50px;
+        height: 5px;
         background-color: white;
         position: absolute;
     }

@@ -9,4 +9,4 @@ function expandHamburgerMenu() {
     hamburgerMenuElement.classList.toggle("hamburger-x");
 }
 const hamburgerMenuElement = document.getElementById("hamburger-menu");
-hamburgerMenuElement.addEventListener("touchstart", expandHamburgerMenu);
+hamburgerMenuElement.addEventListener("touchend", expandHamburgerMenu);
