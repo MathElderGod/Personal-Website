@@ -392,7 +392,7 @@ hr {
         transition: opacity 0.3s ease; /* Smooth transition */
     }
     
-    #contact-me ul li a img:hover {
+    #contact-me ul li a img:active {
         opacity: 0.5;
     }
 
@@ -434,7 +434,7 @@ hr {
         transition: opacity 0.3s ease; /* Smooth transition */
     }
     
-    #ucsd-container a img:hover, #ivc-container a img:hover {
+    #ucsd-container a img:active, #ivc-container a img:active {
         opacity: 0.5;
     }
     
@@ -466,7 +466,7 @@ hr {
         transition: background-color 0.5s ease;
     }
     
-    #skills-container details summary:hover {
+    #skills-container details summary:active {
         background-color: var(--darker-neonblue);
     }
     
@@ -536,7 +536,7 @@ hr {
         display: block;
     }
     
-    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover {
+    #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active {
         opacity: .50;
     }
     
@@ -665,7 +665,7 @@ hr {
         transition: opacity 0.3s ease; /* Smooth transition */
     }
     
-    #contact-me ul li a img:hover {
+    #contact-me ul li a img:active {
         opacity: 0.5;
     }
 
@@ -707,7 +707,7 @@ hr {
         transition: opacity 0.3s ease; /* Smooth transition */
     }
     
-    #ucsd-container a img:hover, #ivc-container a img:hover {
+    #ucsd-container a img:active, #ivc-container a img:active {
         opacity: 0.5;
     }
     
@@ -739,7 +739,7 @@ hr {
         transition: background-color 0.5s ease;
     }
     
-    #skills-container details summary:hover {
+    #skills-container details summary:active {
         background-color: var(--darker-neonblue);
     }
     
@@ -809,7 +809,7 @@ hr {
         display: block;
     }
     
-    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover {
+    #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active {
         opacity: .50;
     }
     
