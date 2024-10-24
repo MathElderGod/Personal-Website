@@ -27,6 +27,27 @@ body {
     margin: 0;
 }
 
+body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+}
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+hr {
+    border: 2.5px solid var(--main-img-blue);
+    border-radius: 10px;
+    width: 75px;
+}
+
 /* Desktop CSS */
 @media screen and (min-width: 1025px) {
     .nav-bar ul {
@@ -38,6 +59,9 @@ body {
         padding: 0;
         overflow: hidden;
         background-color: var(--light-ash-gray);
+    }
+    .nav-bar ul li:first-child {
+        display: none;
     }
     
     .nav-bar ul li {
@@ -63,28 +87,6 @@ body {
         padding-top: 75px;
         text-align: center;
     }
-    
-    body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-        font-family: "Lato", sans-serif;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Merriweather", serif;
-    }
-    h1 {
-        font-size: xx-large;
-    }
-    
-    h2 {
-        font-size: x-large;
-    }
-    
-    hr {
-        border: 2.5px solid var(--main-img-blue);
-        border-radius: 10px;
-        width: 75px;
-    }
-    
     #title-section img {
         border-radius: 50%;
         max-width: 25%;
@@ -277,8 +279,530 @@ body {
 
 /* Tablet CSS*/
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .nav-bar ul {
+        background-color: var(--light-ash-gray);
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+    }
+    .nav-content {
+        display: none;
+    }
+    .show { 
+        display: block;
+    }
+    .nav-bar ul li a {
+        display: block;
+        color: white;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: large;
+        transition: background-color 0.5s ease;
+        border-top: 2px solid white;
+    }
+    .nav-bar ul li a:active {
+        background-color: var(--muddy-black);
+    }
+    #hamburger-menu {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 15px 0px 10px 5px;
+        transition: transform 0.5s;
+    }
+
+    #hamburger-menu:before, #hamburger-menu:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        position: absolute;
+    }
+    #hamburger-menu:before {
+        transform: translateY(-12px);
+    }
+    #hamburger-menu:after {
+        transform: translateY(12px);
+    }
+    #hamburger-menu:active, #hamburger-menu:active:before, #hamburger-menu:active:after {
+        background-color: black;
+    }
+
+    #hamburger-menu.hamburger-x {
+        background-color: transparent; /* Make background transparent */
+    }
+
+    #hamburger-menu.hamburger-x:before {
+        background-color: red;
+        transform: rotate(45deg); /* Rotate the top bar */
+    }
+
+    #hamburger-menu.hamburger-x:after {
+        background-color: red;
+        transform: rotate(-45deg); /* Rotate the bottom bar */
+    }
+    #hamburger-menu.hamburger-x:active:before, #hamburger-menu.hamburger-x:active:after {
+        background-color: black;
+    }
+
+    #title-section {
+        padding-top: 85px;
+        text-align: center;
+    }
+    #title-section img {
+        margin: 25px;
+        border-radius: 50%;
+        max-width: 25%;
+        max-height: 25%;
+        border: 2.5px solid var(--muddy-black);
+    }
+
+    #contact-me, #about-me, #education, #skills, #projects {
+        padding: 15px;
+    }
+
+    #contact-me ul {
+        list-style-type: none;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    #contact-me ul li {
+        padding-top: 15px;
+    }
+    
+    #contact-me ul li a {
+        text-decoration: none;
+    }
+    
+    #contact-me ul li a img {
+        transition: opacity 0.3s ease; /* Smooth transition */
+    }
+    
+    #contact-me ul li a img:hover {
+        opacity: 0.5;
+    }
+
+    #about-me p {
+        padding: 15px;
+        font-size: large;
+    }
+    
+    #education h3 {
+        padding: 15px;
+        margin: 0;
+    }
+    
+    #education p {
+        padding-left: 25px;
+        font-size: large;
+        margin: 5px 0; /* Reduce default spacing */
+    }
+    
+    #ucsd-container, #ivc-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 20px 0px;
+    }
+    #ucsd-container a, #ivc-container a {
+        max-width: 7.5%;
+        height: auto;
+        border-radius: 100%;
+        padding: 2px;
+    }
+    
+    #ucsd-container a img, #ivc-container a img {
+        max-width: 100%;
+        height: auto;
+        padding: 2px;
+        border-radius: 100%;
+        transition: opacity 0.3s ease; /* Smooth transition */
+    }
+    
+    #ucsd-container a img:hover, #ivc-container a img:hover {
+        opacity: 0.5;
+    }
+    
+    
+    /* #skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px; 
+    } */
+    
+    /* Limit to a maximum of 5 columns */
+    #skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px; 
+    }
+    
+    #skills-container details {
+        padding: 15px;
+    }
+    
+    #skills-container details summary {
+        cursor: pointer;
+        background-color: var(--neonblue);
+        border: 2.5px solid var(--muddy-black);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.5s ease;
+    }
+    
+    #skills-container details summary:hover {
+        background-color: var(--darker-neonblue);
+    }
+    
+    #skills-container details ul {
+        padding-left: 50px;
+    }
+    
+    #skills-container details ul li {
+        padding: 5px;
+    }
+    
+    /* #projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 50px;
+        margin: 15px;
+    } */
+    
+    #projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Exactly 2 columns */
+        gap: 50px;
+        margin: 15px 15px 15px 0px;
+    }
+    
+    #projects-container div h3{
+        padding: 15px;
+        color: var(--neonblue);
+    }
+    
+    #cpu-isa, #nachos-os, #multi-platform-post-scheduler, #graphics-shadow-mapping, #professional-site {
+        background-color: var(--light-ash-gray);
+        border: 2.5px solid var(--muddy-black);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 2px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    #cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p, #professional-site p{
+        padding: 5px;
+        color: white;
+        font-size: large;
+    }
+
+    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 100%;
+    }
+
+    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img {
+        max-width: 75%;
+        max-height: 75%;
+        margin-top: 10px;
+        height: auto;
+        transition: opacity 0.3s ease; /* Smooth transition */
+        background-color: white;
+        border-radius: 100%;
+        display: block;
+    }
+    
+    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover {
+        opacity: .50;
+    }
+    
+    footer {
+        padding: 15px;
+        font-size: large;
+        text-align: center;
+        border-top: 2px solid var(--neonblue);
+    }
 }
 
 /* Mobile CSS*/
 @media screen and (max-width: 599px) {
+    .nav-bar ul {
+        background-color: var(--light-ash-gray);
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+    }
+    .nav-content {
+        display: none;
+    }
+    .show { 
+        display: block;
+    }
+    .nav-bar ul li a {
+        display: block;
+        color: white;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: large;
+        transition: background-color 0.5s ease;
+        border-top: 2px solid white;
+    }
+    .nav-bar ul li a:active {
+        background-color: var(--muddy-black);
+    }
+    #hamburger-menu {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 15px 0px 10px 5px;
+        transition: transform 0.5s;
+    }
+
+    #hamburger-menu:before, #hamburger-menu:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        position: absolute;
+    }
+    #hamburger-menu:before {
+        transform: translateY(-12px);
+    }
+    #hamburger-menu:after {
+        transform: translateY(12px);
+    }
+    #hamburger-menu:active, #hamburger-menu:active:before, #hamburger-menu:active:after {
+        background-color: black;
+    }
+
+    #hamburger-menu.hamburger-x {
+        background-color: transparent; /* Make background transparent */
+    }
+
+    #hamburger-menu.hamburger-x:before {
+        background-color: red;
+        transform: rotate(45deg); /* Rotate the top bar */
+    }
+
+    #hamburger-menu.hamburger-x:after {
+        background-color: red;
+        transform: rotate(-45deg); /* Rotate the bottom bar */
+    }
+    #hamburger-menu.hamburger-x:active:before, #hamburger-menu.hamburger-x:active:after {
+        background-color: black;
+    }
+
+    #title-section {
+        padding-top: 85px;
+        text-align: center;
+    }
+    #title-section img {
+        margin: 25px;
+        border-radius: 50%;
+        max-width: 55%;
+        max-height: 55%;
+        border: 2.5px solid var(--muddy-black);
+    }
+
+    #contact-me, #about-me, #education, #skills, #projects {
+        padding: 15px;
+    }
+
+    #contact-me ul {
+        list-style-type: none;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    #contact-me ul li {
+        padding-top: 15px;
+    }
+    
+    #contact-me ul li a {
+        text-decoration: none;
+    }
+    
+    #contact-me ul li a img {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.3s ease; /* Smooth transition */
+    }
+    
+    #contact-me ul li a img:hover {
+        opacity: 0.5;
+    }
+
+    #about-me p {
+        padding: 15px;
+        font-size: large;
+    }
+    
+    #education h3 {
+        padding: 15px;
+        margin: 0;
+    }
+    
+    #education p {
+        padding-left: 25px;
+        font-size: large;
+        margin: 5px 0; /* Reduce default spacing */
+    }
+    
+    #ucsd-container, #ivc-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 20px 0px;
+    }
+    #ucsd-container a, #ivc-container a {
+        max-width: 7.5%;
+        height: auto;
+        border-radius: 100%;
+        padding: 2px;
+    }
+    
+    #ucsd-container a img, #ivc-container a img {
+        width: 100%;
+        height: auto;
+        padding: 2px;
+        border-radius: 100%;
+        transition: opacity 0.3s ease; /* Smooth transition */
+    }
+    
+    #ucsd-container a img:hover, #ivc-container a img:hover {
+        opacity: 0.5;
+    }
+    
+    
+    /* #skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px; 
+    } */
+    
+    /* Limit to a maximum of 5 columns */
+    #skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px; 
+    }
+    
+    #skills-container details {
+        padding: 15px;
+    }
+    
+    #skills-container details summary {
+        cursor: pointer;
+        background-color: var(--neonblue);
+        border: 2.5px solid var(--muddy-black);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.5s ease;
+    }
+    
+    #skills-container details summary:hover {
+        background-color: var(--darker-neonblue);
+    }
+    
+    #skills-container details ul {
+        padding-left: 50px;
+    }
+    
+    #skills-container details ul li {
+        padding: 5px;
+    }
+    
+    /* #projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 50px;
+        margin: 15px;
+    } */
+    
+    #projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Exactly 2 columns */
+        gap: 50px;
+        margin: 15px 15px 15px 0px;
+    }
+    
+    #projects-container div h3{
+        padding: 15px;
+        color: var(--neonblue);
+    }
+    
+    #cpu-isa, #nachos-os, #multi-platform-post-scheduler, #graphics-shadow-mapping, #professional-site {
+        background-color: var(--light-ash-gray);
+        border: 2.5px solid var(--muddy-black);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 2px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    #cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p, #professional-site p{
+        padding: 5px;
+        color: white;
+        font-size: large;
+    }
+
+    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 100%;
+    }
+
+    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img {
+        max-width: 75%;
+        max-height: 75%;
+        margin-top: 10px;
+        height: auto;
+        transition: opacity 0.3s ease; /* Smooth transition */
+        background-color: white;
+        border-radius: 100%;
+        display: block;
+    }
+    
+    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover {
+        opacity: .50;
+    }
+    
+    footer {
+        padding: 15px;
+        font-size: large;
+        text-align: center;
+        border-top: 2px solid var(--neonblue);
+    }
 }
