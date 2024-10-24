@@ -6,7 +6,8 @@ function expandHamburgerMenu() {
     navBarElements.forEach(function(element) {
         element.classList.toggle("show");
     });
+    const hamburgerMenuElement = document.getElementById("hamburger-menu");
     hamburgerMenuElement.classList.toggle("hamburger-x");
 }
-const hamburgerMenuElement = document.getElementById("hamburger-menu");
-hamburgerMenuElement.addEventListener("touchend", expandHamburgerMenu);
+const hamburgerMenuContainerElement = document.getElementById("hamburger-menu-container");
+hamburgerMenuContainerElement.addEventListener("touchend", expandHamburgerMenu);
