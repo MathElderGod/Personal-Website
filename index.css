@@ -89,8 +89,8 @@ hr {
     }
     #title-section img {
         border-radius: 50%;
-        max-width: 25%;
-        max-height: 25%;
+        max-width: 17.5%;
+        max-height: 17.5%;
         margin: 15px;
         border: 2.5px solid var(--muddy-black);
     }
