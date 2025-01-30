@@ -240,13 +240,13 @@ hr {
         align-items: flex-start;
     }
     
-    #cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p, #professional-site p{
+    #cpu-isa p, #nachos-os p, #multi-platform-post-scheduler p, #graphics-shadow-mapping p, #professional-site p {
         padding: 5px;
         color: white;
         font-size: large;
     }
 
-    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a {
+    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a, #professional-site a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -254,7 +254,7 @@ hr {
         width: 100%;
     }
 
-    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img {
+    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img, #professional-site img {
         max-width: 75%;
         max-height: 75%;
         margin-top: 10px;
@@ -265,7 +265,7 @@ hr {
         display: block;
     }
     
-    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover {
+    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover, #professional-site img:hover {
         opacity: .50;
     }
     
@@ -517,7 +517,7 @@ hr {
         font-size: large;
     }
 
-    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a {
+    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a, #professional-site a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -525,7 +525,7 @@ hr {
         width: 100%;
     }
 
-    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img {
+    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img, #professional-site img {
         max-width: 75%;
         max-height: 75%;
         margin-top: 10px;
@@ -536,7 +536,7 @@ hr {
         display: block;
     }
     
-    #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active {
+    #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active, #professional-site img:active {
         opacity: .50;
     }
     
@@ -790,7 +790,7 @@ hr {
         font-size: large;
     }
 
-    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a {
+    #cpu-isa a, #nachos-os a, #multi-platform-post-scheduler a, #graphics-shadow-mapping a, #professional-site a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -798,7 +798,7 @@ hr {
         width: 100%;
     }
 
-    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img {
+    #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img, #professional-site img {
         max-width: 75%;
         max-height: 75%;
         margin-top: 10px;
@@ -809,7 +809,7 @@ hr {
         display: block;
     }
     
-    #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active {
+    #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active, #professional-site img:active {
         opacity: .50;
     }
     
