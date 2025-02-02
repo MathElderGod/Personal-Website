@@ -333,7 +333,7 @@ hr {
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     .nav-bar ul {
         background-color: var(--deep-navy);
-        padding: 5px 0 5px 0;
+        padding: 5px 0 15px 0;
         position: fixed;
         width: 100%;
     }
@@ -631,7 +631,7 @@ hr {
 @media screen and (max-width: 599px) {
     .nav-bar ul {
         background-color: var(--deep-navy);
-        padding: 5px 0 5px 0;
+        padding: 5px 0 15px 0;
         position: fixed;
         width: 100%;
     }
