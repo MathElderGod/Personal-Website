@@ -656,7 +656,7 @@ hr {
         border-top: 2px solid var(--light-gray);
     }
 
-    .nav-bar ul li a::hover, .nav-bar ul li a:active {
+    .nav-bar ul li a:hover, .nav-bar ul li a:active {
         background-color: var(--almost-black);
         color: var(--gold);
     }
