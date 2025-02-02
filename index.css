@@ -514,7 +514,7 @@ hr {
         transition: background-color 0.2s ease-in-out;
     }
     
-    #ucsd-container a img:hover, #ucsd-container a img:active, #ivc-container a img:hover, #ivc-container a img:active {
+    #ucsd-container a img:hover, #ivc-container a img:hover, #ucsd-container a img:active, #ivc-container a img:active {
         background-color: var(--almost-black);
         box-shadow: 0 0 10px 3px var(--gold);
     }
@@ -806,7 +806,7 @@ hr {
         transition: background-color 0.2s ease-in-out;
     }
     
-    #ucsd-container a img:hover, #ucsd-container a img:active, #ivc-container a img:hover, #ivc-container a img:active {
+    #ucsd-container a img:hover, #ivc-container a img:hover, #ucsd-container a img:active, #ivc-container a img:active {
         background-color: var(--almost-black);
         box-shadow: 0 0 10px 3px var(--gold);
     }
