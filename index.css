@@ -357,7 +357,7 @@ hr {
         border-top: 2px solid var(--light-gray);
     }
 
-    .nav-bar ul li a:active {
+    .nav-bar ul li a:hover, a:active {
         background-color: var(--almost-black);
         color: var(--gold);
     }
@@ -467,7 +467,7 @@ hr {
         border-radius: 50%;
     }
     
-    #contact-me ul li a img:active {
+    #contact-me ul li a img:hover, img:active {
         box-shadow: 0 0 8px 2px var(--gold);
         background-color: var(--light-gray);
     }
@@ -655,7 +655,7 @@ hr {
         border-top: 2px solid var(--light-gray);
     }
 
-    .nav-bar ul li a:active {
+    .nav-bar ul li a::hover, a:active {
         background-color: var(--almost-black);
         color: var(--gold);
     }
@@ -766,7 +766,7 @@ hr {
         border-radius: 50%;
     }
     
-    #contact-me ul li a img:active {
+    #contact-me ul li a img:hover, img:active {
         box-shadow: 0 0 5px 2px var(--gold);
         background-color: var(--light-gray);
     }
