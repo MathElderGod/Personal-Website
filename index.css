@@ -357,7 +357,7 @@ hr {
         border-top: 2px solid var(--light-gray);
     }
 
-    .nav-bar ul li a:hover, a:active {
+    .nav-bar ul li a:hover, .nav-bar ul li a:active {
         background-color: var(--almost-black);
         color: var(--gold);
     }
@@ -467,7 +467,7 @@ hr {
         border-radius: 50%;
     }
     
-    #contact-me ul li a img:hover, img:active {
+    #contact-me ul li a img:hover, #contact-me ul li a img:active {
         box-shadow: 0 0 8px 2px var(--gold);
         background-color: var(--light-gray);
     }
@@ -514,7 +514,7 @@ hr {
         transition: background-color 0.2s ease-in-out;
     }
     
-    #ucsd-container a img:active, #ivc-container a img:active {
+    #ucsd-container a img:hover, #ucsd-container a img:active, #ivc-container a img:hover, #ivc-container a img:active {
         background-color: var(--almost-black);
         box-shadow: 0 0 10px 3px var(--gold);
     }
@@ -541,7 +541,7 @@ hr {
         font-weight: bold;
     }
     
-    #skills-container details summary:active {
+    #skills-container details summary:hover, #skills-container details summary:active {
         background-color: var(--almost-black);
         box-shadow: 0 0 15px 3px var(--gold);
         color: var(--light-gray);
@@ -611,6 +611,7 @@ hr {
         display: block;
     }
     
+    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover, #professional-site img:hover,
     #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active, #professional-site img:active {
         background-color: var(--gold);
         box-shadow: 0 0 12.5px 2px var(--gold);
@@ -655,7 +656,7 @@ hr {
         border-top: 2px solid var(--light-gray);
     }
 
-    .nav-bar ul li a::hover, a:active {
+    .nav-bar ul li a::hover, .nav-bar ul li a:active {
         background-color: var(--almost-black);
         color: var(--gold);
     }
@@ -766,7 +767,7 @@ hr {
         border-radius: 50%;
     }
     
-    #contact-me ul li a img:hover, img:active {
+    #contact-me ul li a img:hover, #contact-me ul li a img:active {
         box-shadow: 0 0 5px 2px var(--gold);
         background-color: var(--light-gray);
     }
@@ -805,7 +806,7 @@ hr {
         transition: background-color 0.2s ease-in-out;
     }
     
-    #ucsd-container a img:active, #ivc-container a img:active {
+    #ucsd-container a img:hover, #ucsd-container a img:active, #ivc-container a img:hover, #ivc-container a img:active {
         background-color: var(--almost-black);
         box-shadow: 0 0 10px 3px var(--gold);
     }
@@ -833,7 +834,7 @@ hr {
         font-weight: bold;
     }
     
-    #skills-container details summary:active {
+    #skills-container details summary:hover, #skills-container details summary:active {
         background-color: var(--almost-black);
         box-shadow: 0 0 15px 3px var(--gold);
         color: var(--light-gray);
@@ -898,7 +899,8 @@ hr {
         border-radius: 100%;
         display: block;
     }
-    
+
+    #cpu-isa img:hover, #nachos-os img:hover, #multi-platform-post-scheduler img:hover, #graphics-shadow-mapping img:hover, #professional-site img:hover,
     #cpu-isa img:active, #nachos-os img:active, #multi-platform-post-scheduler img:active, #graphics-shadow-mapping img:active, #professional-site img:active {
         background-color: var(--gold);
         box-shadow: 0 0 12.5px 2px var(--gold);
