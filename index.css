@@ -823,7 +823,9 @@ hr {
     }
     
     #skills-container details summary {
-        list-style: none;
+        &::marker{
+            content: "";
+        }
         cursor: pointer;
         background-color: var(--gold);
         border: 2.5px solid var(--almost-black);
