@@ -841,7 +841,7 @@ hr {
     #cpu-isa img, #nachos-os img, #multi-platform-post-scheduler img, #graphics-shadow-mapping img, #professional-site img {
         width: 25%;
         height: auto;
-        margin-top: 10px 0 10px 0;
+        margin-top: 10px;
         transition: background-color 0.2s ease-in-out;
         background-color: var(--light-gray);
         border-radius: 100%;
