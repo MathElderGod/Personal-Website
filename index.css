@@ -446,8 +446,8 @@ hr {
         height: auto;
         margin: 15px;
         border-radius: 50%;
-        border: 2.5px solid var(--dark-charcoal);
-        box-shadow: 0 0 10px 4px var(--dark-charcoal);
+        border: 2.5px solid var(--charcoal);
+        box-shadow: 0 0 10px 4px var(--light-gray);
     }
 
     #contact-me, #about-me, #education, #skills, #projects {
@@ -724,8 +724,8 @@ hr {
         height: auto;
         margin: 15px;
         border-radius: 50%;
-        border: 2.5px solid var(--dark-charcoal);
-        box-shadow: 0 0 10px 4px var(--dark-charcoal);
+        border: 2.5px solid var(--charcoal);
+        box-shadow: 0 0 10px 4px var(--light-gray);
     }
 
     #contact-me, #about-me, #education, #skills, #projects {
