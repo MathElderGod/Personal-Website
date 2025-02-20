@@ -343,7 +343,7 @@ hr {
 
 /*******************************************************************************/
 /* Tablet CSS*/
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1025px) {
     .nav-bar ul {
         background-color: var(--charcoal);
         padding: 5px 0 15px 0;
@@ -621,7 +621,7 @@ hr {
 /*******************************************************************************/
 
 /* Mobile CSS*/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
     .nav-bar ul {
         background-color: var(--charcoal);
         padding: 5px 0 15px 0;
