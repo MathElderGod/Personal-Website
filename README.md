@@ -22,4 +22,4 @@ It serves as an online portfolio where recruiters, hiring managers, and collabor
 
 [HTML Validated](https://validator.w3.org/)
 
-[HTML Validated](https://jigsaw.w3.org/css-validator/)
+[CSS Validated](https://jigsaw.w3.org/css-validator/)
