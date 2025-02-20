@@ -7,17 +7,17 @@
 
 @font-face {
     font-family: "Roboto Condensed Bold";
-    src: url("/fonts/roboto-condensed-webfont/RobotoCondensed-Bold.woff") format("woff");
+    src: url("fonts/roboto-condensed-webfont/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "Roboto Condensed Bold Italic";
-    src: url("/fonts/roboto-condensed-webfont/RobotoCondensed-BoldItalic.woff") format("woff");
+    src: url("fonts/roboto-condensed-webfont/RobotoCondensed-BoldItalic.woff") format("woff");
 }
 
 @font-face {
     font-family: "Roboto Condensed Regular";
-    src: url("/fonts/roboto-condensed-webfont/RobotoCondensed-Regular.woff") format("woff");
+    src: url("fonts/roboto-condensed-webfont/RobotoCondensed-Regular.woff") format("woff");
 }
 
 
