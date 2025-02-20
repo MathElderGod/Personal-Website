@@ -18,4 +18,4 @@ It serves as an online portfolio where recruiters, hiring managers, and collabor
 - CSS – Styling and layout.
 - JavaScript – Enhancing interactivity.
 
-[Visit Wesbsite](https://github.com/MathElderGod/Personal-Website/blob/master/index.html)
+[Visit Wesbsite](https://matheldergod.github.io/Personal-Website/)
