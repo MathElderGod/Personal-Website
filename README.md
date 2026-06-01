@@ -18,7 +18,7 @@ It serves as an online portfolio where recruiters, hiring managers, and collabor
 - CSS – Styling and layout.
 - JavaScript – Enhancing interactivity.
 
-[Visit Wesbsite GitHub Page](https://matheldergod.github.io/Personal-Website/) or [Visit Wesbsite Netlify Host Page](https://alex-g-arias.netlify.app/)
+[Visit Website GitHub Page](https://matheldergod.github.io/Personal-Website/) or [Visit Website Netlify Host Page](https://alex-g-arias.netlify.app/)
 
 [HTML Validated](https://validator.w3.org/)
 
