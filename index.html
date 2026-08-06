@@ -11,19 +11,24 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <ul>
-                <li><div id="hamburger-menu-container"><span id="hamburger-menu"></span></div></li>
-                <li class="nav-content"><a href="#contact-me-header">Contact Me</a></li>
-                <li class="nav-content"><a href="#about-me-header">About Me</a></li>
-                <li class="nav-content"><a href="#education-header">Education</a></li>
-                <li class="nav-content"><a href="#skills-header">Skills</a></li>
-                <li class="nav-content"><a href="#projects-header">Projects</a></li>
-                <li class="nav-content"><a href="https://github.com/MathElderGod/Interview-Questions.git">&#x1F517;Interview Questions</a></li>
+            <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+            </button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#contact-me-header">Contact Me</a></li>
+                <li><a href="#about-me-header">About Me</a></li>
+                <li><a href="#education-header">Education</a></li>
+                <li><a href="#skills-header">Skills</a></li>
+                <li><a href="#projects-header">Projects</a></li>
+                <li><a href="https://github.com/MathElderGod/Interview-Questions.git">&#x1F517;Interview Questions</a></li>
             </ul>
         </nav>
         <section id="title-section">
             <h1>Alexander G. Arias</h1>
-            <img src="images/casual-img.jpg" alt="A picture of Alexander smiling at the camera, wearing a nice grey suit.">
+            <p id="title-tagline">Computer Scientist | Software Engineer</p>
+            <img src="images/professional-img.jpg" alt="A picture of Alexander smiling at the camera, wearing a nice grey suit.">
         </section>
     </header>
     <section id="contact-me">
@@ -34,7 +39,7 @@
             <li><a href="tel:+17609964461"><img src="images/phone-logo.png" alt="Clickable phone image." title="Call Me?"></a></li>
             <li><a href="https://www.linkedin.com/in/alex-g-arias"><img src="images/linked-in-logo.png" alt="Clickable linkedIn image." title="Visit My LinkedIn?"></a></li>
             <li><a href="https://github.com/MathElderGod"><img src="images/github-logo.png" alt="Clickable github image." title="Visit My Github?"></a></li>
-            <li><a href="other_docs/Arias_Alexander_G_Resume_v1.pdf"><img src="images/resume-logo.png" alt="resume logo." title="Download My Resume?"></a></li>
+            <li><a href="other_docs/Arias_Alexander_G_Resume_v3.1.pdf"><img src="images/resume-logo.png" alt="resume logo." title="Download My Resume?"></a></li>
         </ul>
     </section>
     <section id="about-me">
@@ -43,7 +48,7 @@
         <p>
             I am a Computer Science graduate from the University of California, 
             San Diego, with a passion for problem-solving and software development. 
-            From 2013 to 2016, I proudly served in the U.S. Army, where I honed my discipline, 
+            Prior to pursuing my degrees, I proudly served in the U.S. Army, where I honed my discipline, 
             resilience, and teamwork skills, earning an honorable discharge.
         </p>
         <p>
@@ -97,7 +102,7 @@
         <h2 id="projects-header">Projects</h2>
         <hr>
         <div id="projects-container">
-            <div id="cpu-isa">
+            <div class="project-card">
                 <h3>Simple Central Processing Unit and Custom Instruction Set Architecture</h3>
                 <p>
                     Designed and developed a 9-bit Instruction Set Architecture (ISA) for a custom central processing unit (CPU), optimizing for efficiency and compatibility.
@@ -119,7 +124,7 @@
                     <b><u>Technologies:</u></b> Assembly Language (Custom ISA), System Verilog, and C. 
                 </p>
             </div>
-            <div id="nachos-os">
+            <div class="project-card">
                 <h3>Nachos Operating System</h3>
                 <p>
                     Designed and implemented a functional academic operating system in a team of four, known as Nachos (Not Another Completely Heuristic Operating System).
@@ -136,7 +141,7 @@
                     <b><u>Technologies:</u></b> Java and C. 
                 </p>
             </div>
-            <div id="multi-platform-post-scheduler">
+            <div class="project-card">
                 <h3>Multi Platform Post Scheduler</h3>
                 <p>
                     Co-led an 8-member team in developing a web application for scheduling and managing social media posts across Twitter, Facebook, and Instagram.
@@ -152,7 +157,7 @@
                     <b><u>Technologies:</u></b> HTML, CSS, and JavaScript. 
                 </p>
             </div>
-            <div id="graphics-shadow-mapping">
+            <div class="project-card">
                 <h3>Graphics Shadow Mapping</h3>
                 <p>
                     Developed a shadow mapping system using OpenGL and C++, achieving realistic light-based scene rendering.
@@ -168,7 +173,7 @@
                     <b><u>Technologies:</u></b> OpenGL, C, and C++. 
                 </p>
             </div>
-            <div id="professional-site">
+            <div class="project-card">
                 <h3>This Simple Professional Website</h3>
                 <p>
                     Developed a clean, responsive, and accessible website following modern web development standards.
@@ -196,4 +201,3 @@
     <script src="index.js"></script>
 </body>
 </html>
-
