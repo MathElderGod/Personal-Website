@@ -1,4 +1,4 @@
-# Simple Professional Website
+# Professional Website
 
 ## Overview
 
